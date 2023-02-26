@@ -27,3 +27,15 @@ body {
 .omikuji-img {
   height: 15rem;
 }
+
+/* developers.html */
+
+.uname{
+  font-size: 1.25rem;
+}
+.summary-box{
+  width: 200px;
+}
+h5{
+  font-size: 1.5rem;
+}
