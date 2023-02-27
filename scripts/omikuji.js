@@ -85,40 +85,40 @@ class Omikuji {
     let fileNameOfImage = '';
     switch (fortune) {
       case '独立':
-        fileNameOfImage = 'dance_yorokobi_mai_woman.png';
+        fileNameOfImage = '01_dokuritu.png';
         break;
       case '自社':
-        fileNameOfImage = 'money_megakuramu_man.png';
+        fileNameOfImage = '02_jisya.png';
         break;
       case '複業':
-        fileNameOfImage = 'pose_dance_ukareru_woman.png';
+        fileNameOfImage = '03_fukugyo.png';
         break;
       case '修行':
-        fileNameOfImage = 'pose_dance_ukareru_man.png';
+        fileNameOfImage = '04_intern.png';
         break;
       case '受託':
-        fileNameOfImage = 'pose_genki09_businessman.png';
+        fileNameOfImage = '05_jutaku.png';
         break;
       case '請負':
-        fileNameOfImage = 'pose_anshin_woman.png';
+        fileNameOfImage = '06_ukeoi.png';
         break;
       case '起業':
-        fileNameOfImage = 'businessman1_nayami.png';
+        fileNameOfImage = '07_kigyou.png';
         break;
       case '抜擢':
-        fileNameOfImage = 'sweets_wataame_girl2.png';
+        fileNameOfImage = '08_hakkutu.png';
         break;
       case '派遣':
-        fileNameOfImage = 'sick_kaoiro_man.png';
+        fileNameOfImage = '09_haken.png';
         break;
       case '修学':
-        fileNameOfImage = 'kaji_kagamu_woman.png';
+        fileNameOfImage = '10_shugaku.png';
         break;
       case '個人':
-        fileNameOfImage = 'pose_ochikomu_businessman.png';
+        fileNameOfImage = '11_kojin.png';
         break;
       case '海外':
-        fileNameOfImage = 'food_spaghetti_neapolitan.png';
+        fileNameOfImage = '12_kaigai.png';
         break;
     }
 
