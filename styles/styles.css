@@ -1,5 +1,7 @@
 :root {
   --color-theme: rgb(13, 255, 0);
+  --color-blue: #196cf1;
+  --color-white:#fff;
 }
 body {
   height: 100vh;
@@ -32,15 +34,33 @@ body {
 
 .uname{
   font-size: 1.25rem;
+  color: var(--color-blue);
 }
 .summary-box{
   width: 200px;
 }
 h4{
   font-size: 1.5rem;
+  color: var(--color-blue);
 }
 h5{
   font-size: 1.25rem;
+}
+.border-dashed{
+  border: dashed 2px #6e8efe;
+}
+.btn{
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+li a:hover {
+  text-decoration: underline;
+}
+.chevron-color{
+  color: var(--color-blue);
+}
+.box-bg-color{
+  background-color: var(--color-white);
 }
 
 /* Effect */
