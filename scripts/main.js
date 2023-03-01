@@ -1,6 +1,11 @@
-function drawOmikuji(){
-    let omikuji = new Omikuji();
-    goToOmikujiPage(omikuji);
+const config = {
+  topPage: document.getElementById('top-page'),
+  omikujiPage: document.getElementById('omikuji-page'),
+};
+
+function drawOmikuji() {
+  let omikuji = new Omikuji();
+  goToOmikujiPage(omikuji);
 }
 
 function displayNone(ele) {
@@ -27,6 +32,11 @@ function backToTopPage() {
     displayNone(config.omikujiPage);
     displayBlock(config.topPage);
     config.omikujiPage.innerHTML = '';
+}
+
+function drawOmikuji(){
+    let omikuji = new Omikuji();
+    goToOmikujiPage(omikuji);
 }
   
 function createOmikujiPage(omikuji){
@@ -285,23 +295,6 @@ class Omikuji {
 
 
 
-/*
-  
-
-const config = {
-  topPage: document.getElementById('top-page'),
-  omikujiPage: document.getElementById('omikuji-page'),
-};
 
 
 
-
-
-
-
-
-
-function drawOmikuji() {
-  let omikuji = new Omikuji();
-  goToOmikujiPage(omikuji);
-}
