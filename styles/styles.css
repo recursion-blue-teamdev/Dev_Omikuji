@@ -29,6 +29,9 @@ body {
 .omikuji-img {
   height: 15rem;
 }
+.box-width{
+  width: 500px;
+}
 
 /* developers.html */
 
@@ -38,6 +41,9 @@ body {
 }
 .summary-box{
   width: 200px;
+}
+h3{
+  font-size: 1.75rem;
 }
 h4{
   font-size: 1.5rem;
@@ -61,6 +67,9 @@ li a:hover {
 }
 .box-bg-color{
   background-color: var(--color-white);
+}
+ul{
+  padding-left: 0px;
 }
 
 /* Effect */
