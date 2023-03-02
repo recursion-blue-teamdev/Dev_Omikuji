@@ -31,9 +31,6 @@ function createOmikujiPage(omikuji){
         </div>
         <div class="py-3 text-center align-items-center">
             <button id="re-draw-omikuji" type="button" class="btn btn-danger rounded yuji-syuku">もう一度おみくじを引く</button>
-            <button onclick=”location.href=’https://twitter.com/share?ref_src=twsrc%5Etfw’” class="twitter-share-button" data-show-count="false">Twitterでシェア</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </button>s
         </div>
     </div>
     `;
