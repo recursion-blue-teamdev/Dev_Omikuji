@@ -24,46 +24,45 @@
   </style> -->
 </head>
 <body>
-  <div>
-    <!-- top page -->
-    <div id="top-page" class="vh-100 d-flex justify-content-center align-items-center flex-column">
-      <section>
-        <div>
-          <div class="text-center">
-            <h1>エンジニア<br>転職みくじ</h1>
-            <img src="images/top_image.png" class="light m-4 top_image">
-            <!-- <img src="images/syougatsu2_omijikuji2.png" class="light m-4 omikuji-img"> -->
-          </div>
-          <div class="d-flex justify-content-center align-items-center pt-3">
-            <button id="draw-omikuji" type="button" class="btn btn-danger rounded-pill" onclick="drawOmikuji(); event.preventDefault()">
-              おみくじを引く
-            </button>
-          </div>
+  <!-- top page -->
+  <div id="top-page" class="h-100 d-flex justify-content-center align-items-center flex-column">
+    <section>
+      <div>
+        <div class="text-center">
+          <h1>エンジニア<br>転職みくじ</h1>
+          <img src="images/top_image.png" class="light m-4 top_image">
+          <!-- <img src="images/syougatsu2_omijikuji2.png" class="light m-4 omikuji-img"> -->
         </div>
-      </section>
+        <div class="d-flex justify-content-center align-items-center pt-3">
+          <button id="draw-omikuji" type="button" class="btn btn-danger rounded-pill mb-4" onclick="drawOmikuji(); event.preventDefault()">
+            おみくじを引く
+          </button>
+        </div>
+      </div>
+    </section>
 
-      <footer>
+    <footer>
         <div class="d-flex flex-column text-white">
-          <div class="d-flex justify-content-center align-items-center">
-            <a href="outline.html">
-              <p class="text-white middle-font" >
-                このおみくじについて
-              </p>
-            </a>
-            <p class="text-white middle-font"> | </p>
-            <a href="developers.html">
-              <p class="text-white middle-font">開発者一覧</p>
-            </a>
-          </div>
-          <div class="text-center">
-            <p class="small-font">©️Recursion blue-team</p>
-          </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="outline.html">
+            <p class="text-white middle-font">
+              このおみくじについて
+            </p>
+          </a>
+          <p class="text-white middle-font"> | </p>
+          <a href="developers.html">
+            <p class="text-white middle-font">開発者一覧</p>
+          </a>
         </div>
-      </footer>
-    </div>
-    <!-- おみくじの結果を表示するための空要素 -->
-    <div id="omikuji-page" class="vh-100 d-flex justify-content-center align-items-center flex-column d-none"></div>
+        <div class="text-center">
+          <p class="small-font">©️Recursion blue-team</p>
+        </div>
+      </div>
+    </footer>
   </div>
+  <!-- おみくじの結果を表示するための空要素 -->
+  <div id="omikuji-page" class="h-80 d-flex justify-content-center align-items-center flex-column d-none"></div>  
+  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
