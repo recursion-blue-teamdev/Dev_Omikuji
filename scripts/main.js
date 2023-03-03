@@ -1,6 +1,7 @@
 const config = {
   topPage: document.getElementById('top-page'),
   omikujiPage: document.getElementById('omikuji-page'),
+  popup: document.getElementById('popup')
 };
 
 function drawOmikuji() {
@@ -37,6 +38,20 @@ function backToTopPage() {
 function drawOmikuji(){
     let omikuji = new Omikuji();
     goToOmikujiPage(omikuji);
+}
+
+// 2秒間おみくじの箱画像を表示させる
+var timerId;
+function popupOmikujiBox(){
+    displayBlock(config.popup);
+    timerId = setTimeout( closeBox , 2000 );
+}
+
+// おみくじの箱画像を非表示にする
+function closeBox(){
+    clearTimeout( timerId );
+    displayNone(config.popup);
+    drawOmikuji()
 }
 
 
