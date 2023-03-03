@@ -31,10 +31,9 @@
         <div class="text-center">
           <h1>エンジニア<br>転職みくじ</h1>
           <img src="images/top_image.png" class="light m-4 top_image">
-          <!-- <img src="images/syougatsu2_omijikuji2.png" class="light m-4 omikuji-img"> -->
         </div>
         <div class="d-flex justify-content-center align-items-center pt-3">
-          <button id="draw-omikuji" type="button" class="btn btn-danger rounded-pill mb-4" onclick="drawOmikuji(); event.preventDefault()">
+          <button id="draw-omikuji" type="button" class="btn btn-danger rounded-pill mb-4" onclick="popupOmikujiBox(); event.preventDefault()">
             おみくじを引く
           </button>
         </div>
@@ -61,7 +60,14 @@
     </footer>
   </div>
   <!-- おみくじの結果を表示するための空要素 -->
-  <div id="omikuji-page" class="h-80 d-flex justify-content-center align-items-center flex-column d-none"></div>  
+  <div id="omikuji-page" class="h-80 d-flex justify-content-center align-items-center flex-column d-none"></div> 
+  
+  <!-- おみくじの箱画像をポップアップ表示するための領域 -->
+  <div id="popup" class="h-100 d-flex justify-content-center align-items-center d-none">
+    <div class="content m-auto">
+        <img src="images/omikuji-box.png">
+    </div>
+  </div>
   
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
