@@ -45,7 +45,6 @@ function drawOmikuji(){
 var timerId;
 function popupOmikujiBox(){
     displayBlock(config.popup);
-    // displayBlock(config.waiting_msg);
     timerId = setTimeout( closeBox , 2000 );
 }
 
