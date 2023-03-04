@@ -1,15 +1,15 @@
 function createOmikujiPage(omikuji){
     const container = document.createElement('div');
-    container.classList.add('p-3','box-width');
+    container.classList.add('m-3','box-width');
 
     const omikujiFrame = document.createElement('div');
-    omikujiFrame.classList.add('bg-white','d-flex','justify-content-center','align-items-center','flex-column','my-2');
+    omikujiFrame.classList.add('border','border-danger','bg-white','d-flex','justify-content-center','align-items-center','flex-column','my-2');
     var oFortune = "あなたの未来は"+omikuji.fortune;
     var oLuckyAction = "ラッキーな行動は"+omikuji.luckyAction;
     var oLuckyShortcut = "ラッキーショートカットは"+omikuji.luckyShortcut;
     var oLuckyReview = "ラッキーリビューは"+omikuji.luckyReview;
     omikujiFrame.innerHTML = `
-    <div class="border border-danger px-3">
+    <div class="px-3">
         <div class="pt-3">
             <h4 class="text-danger text-center yuji-syuku">ソフトウェア転職みくじ</h4>
         </div>
