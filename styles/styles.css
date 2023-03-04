@@ -37,7 +37,7 @@ body {
   height: 15rem;
 }
 .box-width{
-  width: 500px;
+  width: 300px;
 }
 
 /* developers.html */
@@ -47,6 +47,9 @@ body {
 }
 .summary-box{
   width: 200px;
+}
+h2{
+  font-size: 5rem;
 }
 h3{
   font-size: 1.75rem;
@@ -127,3 +130,14 @@ ul{
 a,a:hover,a:visited {
   text-decoration: none;
 }
+
+/*レスポンシブ
+@media (max-width: 768px){
+  .omikuji-img {
+    height: 5rem;
+  }
+  .top_image {
+    height: 5rem;
+  }
+}
+*/
