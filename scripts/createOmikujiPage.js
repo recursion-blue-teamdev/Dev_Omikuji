@@ -37,7 +37,7 @@ function createOmikujiPage(omikuji){
         </div>
         <div class="border-top border-danger text-center align-items-center py-3">
             <button id="re-draw-omikuji" type="button" class="btn btn-danger rounded-pill mb-2">もう一度おみくじを引く</button>
-            <button onclick="location.href='https://twitter.com/share?ref_src=twsrc%5Etfw%0a&text=ソフトウェア転職みくじの占い結果は「${omikuji.fortune}」でした！%0a占いのお告げは、%0a「${oDescription}」%0aみんなも転職みくじを引いてみよう！ラッキーアクションなどのお告げもあります。%0a&url=https://github.com/recursion-blue-teamdev/Dev_Omikuji%0a&hashtags=RecursionCS,初心者用チーム開発'" type="button" class="btn btn-danger rounded-pill">Twitterでシェア</a>
+            <button onclick="location.href='https://twitter.com/share?ref_src=twsrc%5Etfw%0a&text=ソフトウェア転職みくじの占い結果は「${omikuji.fortune}」でした！%0a占いのお告げは、%0a「${oDescription}」%0aみんなも転職みくじを引いてみよう！ラッキーアクションなどのお告げもあります。%0a&url=https://recursion-blue-teamdev.github.io/Dev_Omikuji/%0a&hashtags=RecursionCS,初心者用チーム開発'" type="button" class="btn btn-danger rounded-pill">Twitterでシェア</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </button>
         </div>
