@@ -22,20 +22,22 @@ function createOmikujiPage(omikuji){
             <h5 class="text-danger text-center yuji-syuku">${omikuji.description}</h5>
         </div>
         <div class="border-top  border-danger pt-3">
-            <h3 class="text-danger text-center yuji-syuku">ラッキーな行動</h3>
+            <h3 class="text-danger text-center yuji-syuku">ラッキーアクション</h3>
             <h5 class="text-danger text-center yuji-syuku">${omikuji.luckyAction}</h5>
         </div>
         <div class="border-top  border-danger pt-3">
             <h3 class="text-danger text-center yuji-syuku">ラッキーショートカット</h3>
+            <p class="text-danger text-center yuji-syuku">※Visual Studio Codeの<br>おすすめショートカット</p>
             <h5 class="text-danger text-center yuji-syuku">${omikuji.luckyShortcut}</h5>
         </div>
         <div class="border-top  border-danger pt-3">
             <h3 class="text-danger text-center yuji-syuku">ラッキーリビュー</h3>
+            <p class="text-danger text-center yuji-syuku">※Recursionの復習するならここ！</p>
             <h5 class="text-danger text-center yuji-syuku">${omikuji.luckyReview}</h5>
         </div>
         <div class="border-top border-danger text-center align-items-center py-3">
             <button id="re-draw-omikuji" type="button" class="btn btn-danger rounded-pill mb-2">もう一度おみくじを引く</button>
-            <button onclick="location.href='https://twitter.com/share?ref_src=twsrc%5Etfw%0a&text=ソフトウェア転職みくじの占い結果は「${omikuji.fortune}」でした！%0aおみくじの近未来予想は、%0a「${oDescription}」%0aみんなも転職みくじを引いてみよう！ラッキーアクションやラッキーショートカットのお告げもあります。%0a&url=https://github.com/recursion-blue-teamdev/Dev_Omikuji%0a&hashtags=RecursionCS,初心者用チーム開発'" type="button" class="btn btn-danger rounded-pill">Twitterでシェア</a>
+            <button onclick="location.href='https://twitter.com/share?ref_src=twsrc%5Etfw%0a&text=ソフトウェア転職みくじの占い結果は「${omikuji.fortune}」でした！%0a占いのお告げは、%0a「${oDescription}」%0aみんなも転職みくじを引いてみよう！ラッキーアクションなどのお告げもあります。%0a&url=https://github.com/recursion-blue-teamdev/Dev_Omikuji%0a&hashtags=RecursionCS,初心者用チーム開発'" type="button" class="btn btn-danger rounded-pill">Twitterでシェア</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </button>
         </div>

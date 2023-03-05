@@ -17,7 +17,7 @@ class Omikuji {
     else if (number >= 6 && number < 8) fortune = '受託';
     else if (number >= 8 && number < 10) fortune = '請負';
     else if (number >= 10 && number < 12) fortune = '起業';
-    else if (number >= 12 && number < 14) fortune = '抜擢';
+    else if (number >= 12 && number < 14) fortune = '発掘';
     else if (number >= 14 && number < 16) fortune = '派遣';
     else if (number >= 16 && number < 18) fortune = '修学';
     else if (number >= 18 && number < 19) fortune = '個人';
@@ -30,7 +30,7 @@ class Omikuji {
     switch (fortune) {
       case '独立':
         description =
-          'フリーランスエンジニアとして新たな一歩を踏み出すことになりそうです。エンジニアとしての仕事に加えスケジュール管理や契約交渉、確定申告などタスク盛りだくさんですがエキサイティングな日々が待っています。';
+          'フリーランスエンジニアとして新たな一歩を踏み出す事になりそうです。エンジニアとしての仕事に加えスケジュール管理や契約交渉、確定申告などタスク盛りだくさんですがエキサイティングな日々が待っています。';
         break;
       case '自社':
         description =
@@ -38,11 +38,11 @@ class Omikuji {
         break;
       case '複業':
         description =
-          '平日はpythonエンジニア、週末は初級エンジニア向けの講師として二刀流で働く近未来が見えます。メキメキスキルアップ！！';
+          '楽しい複業ライフですがネコハラには注意！？二刀流で楽しく働く近未来が見えます。愛するペットが商売道具を寝床にしないよう注意しましょう。';
         break;
       case '修行':
         description =
-          '実務未経験から短期インターンに参加できることに！インターンと自己学習とで大変実りのある日々になります。';
+          '実務未経験から短期インターンに参加できることに！インターンと自己学習とで大変実りのある日々になります。ライバルは昨日の自分だー！';
         break;
       case '受託':
         description =
@@ -50,19 +50,19 @@ class Omikuji {
         break;
       case '請負':
         description =
-          '請負契約でエンジニアデビューする近未来が見えます！プレッシャーで初めはしんどいかもしれませんが、着実にステップアップしているでしょう！';
+          '請負契約エンジニアデビューする近未来が見えます！プレッシャーで初めはしんどいかもしれませんが、着実にステップアップしているでしょう！';
         break;
       case '起業':
         description =
-          '頭に稲妻が走り、Recursionで学んだ経験を活かして起業することになります。あなたの頭の中には事業構想ができているでしょう。';
+          'Recursionで学んだ経験を活かして起業することになります。あなたの頭の中には事業構想ができているでしょう。';
         break;
-      case '抜擢':
+      case '発掘':
         description =
-          'Twitter経由でとある企業からエンジニアとしてスカウトされるでしょう。地道な情報発信が実を結びました。おめでとうございます！';
+          'Twitter経由でとある企業からエンジニアとしてスカウト！されるでしょう。地道な発信が実を結びました。おめでとうございます！';
         break;
       case '派遣':
         description =
-          '技術派遣としてエンジニアとしての第一歩を踏み出すことになりそうです。クライアント業務や開発の基本など食らいつくように身につけていくでしょう。';
+          '技術派遣としてエンジニアとしての第一歩を踏み出す事になりそうです。クライアント業務や開発の基本など食らいつくように身につけていくでしょう。';
         break;
       case '修学':
         description =
@@ -105,7 +105,7 @@ class Omikuji {
       case '起業':
         fileNameOfImage = '07_kigyou.png';
         break;
-      case '抜擢':
+      case '発掘':
         fileNameOfImage = '08_hakkutu.png';
         break;
       case '派遣':
@@ -129,7 +129,7 @@ class Omikuji {
     let luckyAction = '';
     switch (number) {
       case 0:
-        luckyAction = 'キータ記事執筆';
+        luckyAction = 'Qiita記事執筆';
         break;
       case 1:
         luckyAction = 'Recursion　Discord質問解答';
@@ -141,7 +141,7 @@ class Omikuji {
         luckyAction = '技術書の積読解消';
         break;
       case 4:
-        luckyAction = 'Recursion復習';
+        luckyAction = 'Recursionの復習を徹底';
         break;
       case 5:
         luckyAction = 'LT発表会登壇';
@@ -150,7 +150,7 @@ class Omikuji {
         luckyAction = 'エンジニアコミュニティ運営に携わる';
         break;
       default:
-        luckyAction = 'chatGPTカスタマイズ';
+        luckyAction = 'ChatGPTカスタマイズ';
         break;
     }
 
@@ -161,19 +161,19 @@ class Omikuji {
     let luckyShortcut = '';
     switch (number) {
       case 0:
-        luckyShortcut = 'Ctrl(Command) + Shift + L →同単語一括選択';
+        luckyShortcut = 'Ctrl(Command) + Shift + L <br>→同単語一括選択';
         break;
       case 1:
-        luckyShortcut = 'Ctrl(Command) + D →同単語1つずつ選択';
+        luckyShortcut = 'Ctrl(Command) + D <br>→同単語1つずつ選択';
         break;
       case 2:
-        luckyShortcut = 'Ctrl(Command) + Shift + Enter →上に行追加';
+        luckyShortcut = 'Ctrl(Command) + Shift + Enter <br>→上に行追加';
         break;
       case 3:
-        luckyShortcut = 'Ctrl(Command) + Enter →下に行追加';
+        luckyShortcut = 'Ctrl(Command) + Enter <br>→下に行追加';
         break;
       default:
-        luckyShortcut = 'Ctrl(Command) + Home →ファイル先頭に移動';
+        luckyShortcut = 'Ctrl(Command) + Home <br>→ファイル先頭に移動';
         break;
     }
 
@@ -194,6 +194,27 @@ class Omikuji {
         break;
       case 3:
         luckyReview = 'Bootstrap';
+        break;
+      case 4:
+        luckyReview = '16進数';
+        break;
+      case 5:
+        luckyReview = '制御フロー';
+        break;
+      case 6:
+        luckyReview = 'スタック';
+        break;
+      case 7:
+        luckyReview = '計算量';
+        break;
+      case 8:
+        luckyReview = 'フィボナッチ数列';
+        break;
+      case 9:
+        luckyReview = '多次元配列';
+        break;
+      case 10:
+        luckyReview = '連想配列';
         break;
       default:
         luckyReview = 'スコープ';
