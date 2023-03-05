@@ -1,7 +1,8 @@
 const config = {
   topPage: document.getElementById('top-page'),
   omikujiPage: document.getElementById('omikuji-page'),
-  popup: document.getElementById('popup')
+  popup: document.getElementById('popup'),
+  waiting_msg: document.getElementById('waiting_msg')
 };
 
 function drawOmikuji() {
@@ -44,6 +45,7 @@ function drawOmikuji(){
 var timerId;
 function popupOmikujiBox(){
     displayBlock(config.popup);
+    // displayBlock(config.waiting_msg);
     timerId = setTimeout( closeBox , 2000 );
 }
 
@@ -51,7 +53,7 @@ function popupOmikujiBox(){
 function closeBox(){
     clearTimeout( timerId );
     displayNone(config.popup);
-    drawOmikuji()
+    drawOmikuji();
 }
 
 
