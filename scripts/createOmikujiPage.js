@@ -5,6 +5,7 @@ function createOmikujiPage(omikuji){
     const omikujiFrame = document.createElement('div');
     omikujiFrame.classList.add('border','border-danger','bg-white','d-flex','justify-content-center','align-items-center','flex-column','my-2');
     var oFortune = "あなたの未来は"+omikuji.fortune;
+    var oDescription = getBiginningOfOmikujiResult(omikuji.description) + '…'; // Twitterシェア用におみくじ結果説明の冒頭部分を切り取る
     var oLuckyAction = "ラッキーな行動は"+omikuji.luckyAction;
     var oLuckyShortcut = "ラッキーショートカットは"+omikuji.luckyShortcut;
     var oLuckyReview = "ラッキーリビューは"+omikuji.luckyReview;
@@ -34,7 +35,7 @@ function createOmikujiPage(omikuji){
         </div>
         <div class="border-top border-danger text-center align-items-center py-3">
             <button id="re-draw-omikuji" type="button" class="btn btn-danger rounded-pill mb-2">もう一度おみくじを引く</button>
-            <button onclick="location.href='https://twitter.com/share?ref_src=twsrc%5Etfw%0a&text=皆もやってみよう!%0a&url=https://github.com/recursion-blue-teamdev/Dev_Omikuji%0a&hashtags=Recursion'" type="button" class="btn btn-danger rounded-pill">Twitterでシェア</a>
+            <button onclick="location.href='https://twitter.com/share?ref_src=twsrc%5Etfw%0a&text=ソフトウェア転職みくじの占い結果は「${omikuji.fortune}」でした！%0aおみくじの近未来予想は、%0a「${oDescription}」%0aみんなも転職みくじを引いてみよう！ラッキーアクションやラッキーショートカットのお告げもあります。%0a&url=https://github.com/recursion-blue-teamdev/Dev_Omikuji%0a&hashtags=RecursionCS,初心者用チーム開発'" type="button" class="btn btn-danger rounded-pill">Twitterでシェア</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </button>
         </div>
@@ -45,4 +46,15 @@ function createOmikujiPage(omikuji){
     container.append(omikujiFrame);
 
     return container;
+}
+
+// Twitterシェア用におみくじ結果説明の冒頭部分を切り取る関数
+function  getBiginningOfOmikujiResult(description){
+    const delimiters = ['！', '、', '。'];
+    let indexOfFirstDelimiter = Infinity;
+    for(s of delimiters){
+        let i = description.indexOf(s);
+        if(i != -1 && indexOfFirstDelimiter > i) indexOfFirstDelimiter = i;
+    }
+    return description.slice(0, indexOfFirstDelimiter + 1);
 }
